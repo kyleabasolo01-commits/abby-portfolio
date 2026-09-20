@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>abby's portfolio site</title>
+    <link rel="icon" type="image/jpeg" href="image/icon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h2>My Portfolio
+    </h2>
+      <div class="nav-links">
+        <a href="index.html"> Home
+          </a>
+            <a href="gallery.html"> Gallery
+            </a>
+          <a href="about.html"> About
+        </a>
+      <a href="contact.html"> Contact
+    </a>
+  </div>
+</nav>
+
+<section class="page">
+
+<p> explore what inside my gallery.
+  </p>
+
+<div class="gallery">
+
+<div class="card">
+  <h2> It' me 
+    </h2>
+  <img src="image/pic3.png" alt="My Profile" onclick="openImage(this)">
+</div>
+
+<div class="card">
+  <h2>My parents</h2>
+    <img src="image/pic2.png" alt="Activity 2" onclick="openImage(this)">
+      
+
+</div>
+
+<div class="card">
+  <h2>My Family</h2>
+    <img src="image/pic1.png" alt="Activity 2" onclick="openImage(this)">
+    
+</div>
+
+<div class="card">
+  <h2>Ako jpon ni</h2>
+    <img src="image/pic4.png" alt="My Friends" onclick="openImage(this)">
+
+</section>
+
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeImage()"> &times;
+    </span>
+  <img id="modalImage" class="modal-content" alt="Large Image">
+</div>
+
+
+
+</div>
+
+
+<footer>
+  <p>
+    © <span id="year"></span> Abby portfolio
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
